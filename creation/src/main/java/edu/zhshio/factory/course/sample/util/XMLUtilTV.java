@@ -1,8 +1,8 @@
-package edu.zhshio.factory.course.util;
+package edu.zhshio.factory.course.sample.util;
 
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
-import org.xml.sax.SAXException;
+
 import java.io.*;
 public class XMLUtilTV
 {
@@ -15,7 +15,7 @@ public class XMLUtilTV
 			DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = dFactory.newDocumentBuilder();
 			Document doc;							
-			doc = builder.parse(new File("SimpleFactoryconfigTV.xml")); 
+			doc = builder.parse(new File("src/main/java/edu/zhshio/factory/course/sample/resource/SimpleFactoryconfigTV.xml"));
 		
 			//获取包含品牌名称的文本节点
 			NodeList nl = doc.getElementsByTagName("brandName");
